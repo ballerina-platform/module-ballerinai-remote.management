@@ -1,12 +1,12 @@
 Ballerina Runtime-Management Internal Module
 =====================================
 
-  [![Build](https://github.com/ballerina-platform/module-ballerinai-transaction/actions/workflows/build-timestamped-master.yml/badge.svg)](https://github.com/ballerina-platform/module-ballerinai-transaction/actions/workflows/build-timestamped-master.yml)
-  [![GitHub Last Commit](https://img.shields.io/github/last-commit/ballerina-platform/module-ballerinai-transaction.svg)](https://github.com/ballerina-platform/module-ballerinai-transaction/commits/master)
-  [![Github issues](https://img.shields.io/github/issues/ballerina-platform/module-ballerinai-transaction.svg?label=Open%20Issues)](https://github.com/ballerina-platform/module-ballerinai-transaction/issues)
+  [![Build](https://github.com/ballerina-platform/module-ballerinai-runtime.management/actions/workflows/build-timestamped-master.yml/badge.svg)](https://github.com/ballerina-platform/module-ballerinai-runtime.management/actions/workflows/build-timestamped-master.yml)
+  [![GitHub Last Commit](https://img.shields.io/github/last-commit/ballerina-platform/module-ballerinai-runtime.management.svg)](https://github.com/ballerina-platform/module-ballerinai-runtime.management/commits/main)
+  [![Github issues](https://img.shields.io/github/issues/ballerina-platform/module-ballerinai-runtime.management.svg?label=Open%20Issues)](https://github.com/ballerina-platform/module-ballerinai-runtime.management/issues)
   [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-  [![codecov](https://codecov.io/gh/ballerina-platform/module-ballerinai-transaction/branch/master/graph/badge.svg)](https://codecov.io/gh/ballerina-platform/module-ballerinai-transaction)
-  [![GraalVM Check](https://github.com/ballerina-platform/module-ballerinai-transaction/actions/workflows/build-with-bal-test-graalvm.yml/badge.svg)](https://github.com/ballerina-platform/module-ballerinai-transaction/actions/workflows/build-with-bal-test-graalvm.yml)
+  [![codecov](https://codecov.io/gh/ballerina-platform/module-ballerinai-runtime.management/branch/master/graph/badge.svg)](https://codecov.io/gh/ballerina-platform/module-ballerinai-runtime.management)
+  [![GraalVM Check](https://github.com/ballerina-platform/module-ballerinai-runtime.management/actions/workflows/build-with-bal-test-graalvm.yml/badge.svg)](https://github.com/ballerina-platform/module-ballerinai-runtime.management/actions/workflows/build-with-bal-test-graalvm.yml)
 
 The Ballerina runtime.management internal module defines a service to expose runtime artifacts like deployed services, 
 configurable variables, and resources to control runtime artifacts. Once the user defines the configurations 

@@ -1,15 +1,10 @@
 name: PR build
 
-on:
-  pull_request:
-  push:
-    branches-ignore:
-      - main
-      - "automated/dependency_version_update"
-      - "automated/dependency_version_update_tmp"
+on: [pull_request]
 
 jobs:
   ubuntu-build:
+    name: Build on Ubuntu
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -36,6 +31,7 @@ jobs:
         uses: codecov/codecov-action@v2
 
   windows-build:
+    name: Build on Windows
     runs-on: windows-latest
 
     steps:

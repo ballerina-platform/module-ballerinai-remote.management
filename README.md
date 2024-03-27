@@ -10,12 +10,12 @@ Ballerina Runtime-Management Internal Module
 
 The Ballerina runtime.management internal module defines a service to expose runtime artifacts like deployed services, 
 configurable variables, and resources to control runtime artifacts. Once the user defines the configurations 
-inside Ballerina.toml, the management module will be imported to the user's project.
+inside the `Ballerina.toml`, the runtime.management module will be imported to the user's package.
 
 
-During initialization, the ballerina node will be registered in the integration control plane using configurations 
-in Ballerina.toml. Then the integration control plan will connect with a given node via a service the module exposes 
-to discover and control artifacts.
+During initialization, the ballerina node will be registered in the integration control plane using the configurations 
+provided in the `Ballerina.toml`. Then the integration control plane will connect with a given Ballerina node via a 
+service that the module exposes to discover and control the artifacts.
 
 
 ## Building from the Source

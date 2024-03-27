@@ -1,0 +1,11 @@
+[package]
+org = "ballerinai"
+name = "runtime.management"
+version = "1.0.0"
+distribution = "2201.9.0"
+
+[platform.java17]
+graalvmCompatible = true
+
+[[platform.java17.dependency]]
+path = "../native/build/libs/runtime.management-native-1.0.0-SNAPSHOT.jar"

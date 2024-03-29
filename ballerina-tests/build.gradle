@@ -32,7 +32,7 @@ def ballerinaTomlFilePlaceHolder = new File("${project.rootDir}/build-config/res
 def ballerinaDist = "${project.rootDir}/target/ballerina-runtime"
 def distributionBinPath =  "${ballerinaDist}/bin"
 def testCoverageParam = "--code-coverage --coverage-format=xml --includes=io.ballerina.remote.management.*:ballerina.remote.management*"
-def testPackages = ["integration-control-plane-tests", "service-catalog-tests"]
+def testPackages = ["artifacts-tests"]
 
 def stripBallerinaExtensionVersion(String extVersion) {
     if (extVersion.matches(project.ext.timestampedVersionRegex)) {

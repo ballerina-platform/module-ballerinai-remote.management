@@ -24,6 +24,7 @@ plugins {
 ext.ballerinaLangVersion = project.ballerinaLangVersion
 ext.stdlibHttpVersion = project.stdlibHttpVersion
 ext.stdlibLogVersion = project.stdlibLogVersion
+ext.ballerinaTomlParserVersion = project.ballerinaTomlParserVersion
 
 ext.puppycrawlCheckstyleVersion = project.puppycrawlCheckstyleVersion
 
@@ -77,7 +78,8 @@ subprojects {
         /* Standard libraries */
         ballerinaStdLibs "io.ballerina.stdlib:http-ballerina:${stdlibHttpVersion}"
         ballerinaStdLibs "io.ballerina.stdlib:log-ballerina:${stdlibLogVersion}"
-
+        ballerinaStdLibs "io.ballerina.stdlib:io-ballerina:${stdlibIoVersion}"
+3333 //Rpin 1355
         // Transitive dependencies for HTTP module
         ballerinaStdLibs "io.ballerina.stdlib:file-ballerina:${stdlibFileVersion}"
         ballerinaStdLibs "io.ballerina.stdlib:crypto-ballerina:${stdlibCryptoVersion}"
@@ -86,6 +88,9 @@ subprojects {
         ballerinaStdLibs "io.ballerina.stdlib:jwt-ballerina:${stdlibJwtVersion}"
         ballerinaStdLibs "io.ballerina.stdlib:oauth2-ballerina:${stdlibOAuth2Version}"
         ballerinaStdLibs "io.ballerina.stdlib:url-ballerina:${stdlibUrlVersion}"
+        ballerinaStdLibs "io.ballerina.stdlib:os-ballerina:${stdlibOsVersion}"
+        ballerinaStdLibs "io.ballerina.stdlib:task-ballerina:${stdlibTaskVersion}"
+        ballerinaStdLibs "io.ballerina.stdlib:time-ballerina:${stdlibTimeVersion}"
         ballerinaStdLibs "io.ballerina.stdlib:observe-ballerina:${observeVersion}"
         ballerinaStdLibs "io.ballerina:observe-ballerina:${observeInternalVersion}"
     }
@@ -110,5 +115,5 @@ release {
 }
 
 task build {
-    dependsOn('runtime.management-ballerina:build')
+    dependsOn('remote.management-ballerina:build')
 }

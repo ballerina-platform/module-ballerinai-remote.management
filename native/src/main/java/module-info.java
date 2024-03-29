@@ -14,6 +14,6 @@
  * limitations under the License.
  */
 
-module org.ballerinalang.stdlib.runtime.management {
+module org.ballerinalang.stdlib.remote.management {
     requires io.ballerina.runtime;
 }

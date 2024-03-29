@@ -9,15 +9,17 @@ plugins {
     id "com.gradle.enterprise" version "3.13.2"
 }
 
-rootProject.name = 'runtime.management'
+rootProject.name = 'remote.management'
 
 include ':checkstyle'
-include ':runtime.management-native'
-include ':runtime.management-ballerina'
+include ':remote.management-native'
+include ':remote.management-ballerina'
+include ':remote.management-ballerina-tests'
 
 project(':checkstyle').projectDir = file("build-config${File.separator}checkstyle")
-project(':runtime.management-native').projectDir = file('native')
-project(':runtime.management-ballerina').projectDir = file('ballerina')
+project(':remote.management-native').projectDir = file('native')
+project(':remote.management-ballerina').projectDir = file('ballerina')
+project(':remote.management-ballerina-tests').projectDir = file('ballerina-tests')
 
 gradleEnterprise {
     buildScan {

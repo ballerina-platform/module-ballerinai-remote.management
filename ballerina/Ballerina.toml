@@ -1,6 +1,6 @@
 [package]
 org = "ballerinai"
-name = "runtime.management"
+name = "remote.management"
 version = "1.0.0"
 distribution = "2201.9.0"
 
@@ -8,4 +8,4 @@ distribution = "2201.9.0"
 graalvmCompatible = true
 
 [[platform.java17.dependency]]
-path = "../native/build/libs/runtime.management-native-1.0.0-SNAPSHOT.jar"
+path = "../native/build/libs/remote.management-native-1.0.0-SNAPSHOT.jar"

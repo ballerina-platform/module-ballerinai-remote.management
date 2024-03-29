@@ -1,16 +1,16 @@
 Ballerina Runtime-Management Internal Module
 =====================================
 
-  [![Build](https://github.com/ballerina-platform/module-ballerinai-runtime.management/actions/workflows/build-timestamped-master.yml/badge.svg)](https://github.com/ballerina-platform/module-ballerinai-runtime.management/actions/workflows/build-timestamped-master.yml)
-  [![GitHub Last Commit](https://img.shields.io/github/last-commit/ballerina-platform/module-ballerinai-runtime.management.svg)](https://github.com/ballerina-platform/module-ballerinai-runtime.management/commits/main)
-  [![Github issues](https://img.shields.io/github/issues/ballerina-platform/module-ballerinai-runtime.management.svg?label=Open%20Issues)](https://github.com/ballerina-platform/module-ballerinai-runtime.management/issues)
+  [![Build](https://github.com/ballerina-platform/module-ballerinai-remote.management/actions/workflows/build-timestamped-master.yml/badge.svg)](https://github.com/ballerina-platform/module-ballerinai-remote.management/actions/workflows/build-timestamped-master.yml)
+  [![GitHub Last Commit](https://img.shields.io/github/last-commit/ballerina-platform/module-ballerinai-remote.management.svg)](https://github.com/ballerina-platform/module-ballerinai-remote.management/commits/main)
+  [![Github issues](https://img.shields.io/github/issues/ballerina-platform/module-ballerinai-remote.management.svg?label=Open%20Issues)](https://github.com/ballerina-platform/module-ballerinai-remote.management/issues)
   [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-  [![codecov](https://codecov.io/gh/ballerina-platform/module-ballerinai-runtime.management/branch/master/graph/badge.svg)](https://codecov.io/gh/ballerina-platform/module-ballerinai-runtime.management)
-  [![GraalVM Check](https://github.com/ballerina-platform/module-ballerinai-runtime.management/actions/workflows/build-with-bal-test-graalvm.yml/badge.svg)](https://github.com/ballerina-platform/module-ballerinai-runtime.management/actions/workflows/build-with-bal-test-graalvm.yml)
+  [![codecov](https://codecov.io/gh/ballerina-platform/module-ballerinai-remote.management/branch/master/graph/badge.svg)](https://codecov.io/gh/ballerina-platform/module-ballerinai-remote.management)
+  [![GraalVM Check](https://github.com/ballerina-platform/module-ballerinai-remote.management/actions/workflows/build-with-bal-test-graalvm.yml/badge.svg)](https://github.com/ballerina-platform/module-ballerinai-remote.management/actions/workflows/build-with-bal-test-graalvm.yml)
 
-The Ballerina runtime.management internal module defines a service to expose runtime artifacts like deployed services, 
+The Ballerina remote.management internal module defines a service to expose runtime artifacts like deployed services, 
 configurable variables, and resources to control runtime artifacts. Once the user defines the configurations 
-inside the `Ballerina.toml`, the runtime.management module will be imported to the user's package.
+inside the `Ballerina.toml`, the remote.management module will be imported to the user's package.
 
 
 During initialization, the ballerina node will be registered in the integration control plane using the configurations 

@@ -15,10 +15,7 @@
 // under the License.
 
 import ballerina/http;
-import ballerina/jwt;
 
-final jwt:IssuerConfig issuerConfig = {};
-final string jwt = check jwt:issue(issuerConfig);
 listener http:Listener securedEP = new (icpServicePort,
     secureSocket = {
         key: {
@@ -27,7 +24,6 @@ listener http:Listener securedEP = new (icpServicePort,
         }
     }
 );
-
 
 service /management on securedEP {
 

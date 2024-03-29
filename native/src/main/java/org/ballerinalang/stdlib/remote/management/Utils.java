@@ -26,7 +26,7 @@ import io.ballerina.runtime.api.values.BString;
  *
  * @since 1.0.0
  */
-public class RuntimeManager {
+public class Utils {
 
     public static BMap<BString, Object> getArtifacts() {
         Module currentModule = new Module("ballerinai", "remote.management", "1.0.0");

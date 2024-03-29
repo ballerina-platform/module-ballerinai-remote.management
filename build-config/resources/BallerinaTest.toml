@@ -3,15 +3,5 @@ org = "ballerina"
 name = "@package.name@"
 version = "@toml.version@"
 
-[[dependency]]
-org = "ballerina"
-name = "@test.common@"
-repository = "local"
-version = "@toml.version@"
-
 [platform.java17]
 graalvmCompatible = true
-
-[[platform.java17.dependency]]
-scope = "testOnly"
-path = "../../test-utils/build/libs/http-test-utils-@project.version@.jar"

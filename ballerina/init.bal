@@ -25,6 +25,9 @@ function init() returns error? {
 }
 
 function registerInDashboardServer() returns error? {
+    if dashboard.url == "" {
+        return;
+    }
     // We need to wait until services are up
     runtime:sleep(dashboard.waitTimeForServicesInSeconds);
     http:Client dsClient = check new (dashboard.url,

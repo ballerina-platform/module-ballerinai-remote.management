@@ -285,7 +285,7 @@ dependencies = [
 
 [[package]]
 org = "ballerinai"
-name = "runtime.management"
+name = "remote.management"
 version = "0.0.0"
 dependencies = [
 	{org = "ballerina", name = "file"},
@@ -296,6 +296,6 @@ dependencies = [
 	{org = "ballerina", name = "os"}
 ]
 modules = [
-	{org = "ballerinai", packageName = "runtime.management", moduleName = "runtime.management"}
+	{org = "ballerinai", packageName = "remote.management", moduleName = "remote.management"}
 ]
 

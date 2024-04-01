@@ -1,6 +1,6 @@
 ## Package Overview
 
-The `runtime.management` library is one of the internal library packages, it provides internal support for exposing Ballerina runtime artifacts to the integration control plane.
+The `remote.management` library is one of the internal library packages, it provides internal support for exposing Ballerina runtime artifacts to the integration control plane.
 
 ## Report Issues
 

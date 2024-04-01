@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.ballerinalang.stdlib.runtime.management;
+package org.ballerinalang.stdlib.remote.management;
 
 import io.ballerina.runtime.api.Module;
 import io.ballerina.runtime.api.creators.ValueCreator;
@@ -22,14 +22,14 @@ import io.ballerina.runtime.api.values.BMap;
 import io.ballerina.runtime.api.values.BString;
 
 /**
- * Native function implementations of the runtime management module.
+ * Native function implementations of the remote management module.
  *
  * @since 1.0.0
  */
-public class RuntimeManager {
+public class Utils {
 
     public static BMap<BString, Object> getArtifacts() {
-        Module currentModule = new Module("ballerinai", "runtime.management", "1.0.0");
+        Module currentModule = new Module("ballerinai", "remote.management", "1.0.0");
         BMap<BString, Object> artifactEntries = ValueCreator.createMapValue();
         return ValueCreator.createReadonlyRecordValue(currentModule, "ArtifactsResponse", artifactEntries);
     }

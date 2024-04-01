@@ -25,9 +25,9 @@ jacoco {
     toolVersion = "${jacocoVersion}"
 }
 
-description = 'Ballerina - Runtime Management Natives'
+description = 'Ballerina - Remote Management Natives'
 
-def packageName = "runtime.management"
+def packageName = "remote.management"
 
 dependencies {
     checkstyle project(':checkstyle')

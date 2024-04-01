@@ -31,9 +31,9 @@ buildscript {
     }
 }
 
-description = 'Ballerina - Runtime Management Internal'
+description = 'Ballerina - Remote Management Internal'
 
-def packageName = "runtime.management"
+def packageName = "remote.management"
 def packageOrg = "ballerinai"
 
 def tomlVersion = stripBallerinaExtensionVersion("${project.version}")
@@ -109,8 +109,8 @@ publishing {
 
 updateTomlFiles.dependsOn copyStdlibs
 
-build.mustRunAfter ":runtime.management-native:build"
-build.dependsOn ":runtime.management-ballerina:generatePomFileForMavenPublication"
+build.mustRunAfter ":remote.management-native:build"
+build.dependsOn ":remote.management-ballerina:generatePomFileForMavenPublication"
 
 publishToMavenLocal.dependsOn build
 publish.dependsOn build
